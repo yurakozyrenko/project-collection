@@ -5,7 +5,7 @@ const serviceKey = path.join(__dirname, './keys.json');
 const { Storage } = Cloud;
 const storage = new Storage({
     keyFilename: serviceKey,
-    projectId: 'formal-theater-411018',
+    projectId: process.env.PROJECT_ID,
 });
 
 module.exports = storage;
