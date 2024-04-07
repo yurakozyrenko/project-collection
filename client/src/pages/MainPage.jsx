@@ -7,12 +7,11 @@ import { getAllItems } from '../redux/features/item/itemSlice';
 import { getTopCollections } from '../redux/features/collection/collectionSlice';
 
 export const MainPage = () => {
-    // const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     const dispatch = useDispatch();
 
     const { items } = useSelector((state) => state.item);
     const { collections } = useSelector((state) => state.collection);
-    const { loading } = useSelector((state) => state.collection);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -21,10 +20,9 @@ export const MainPage = () => {
                 await dispatch(getTopCollections());
             } catch (error) {
                 console.error(error);
+            } finally {
+                setLoading(false);
             }
-            // finally {
-            //     setLoading(false);
-            // }
         };
 
         fetchData();
