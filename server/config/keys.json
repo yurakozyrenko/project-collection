@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "formal-theater-411018",
+    "private_key_id": "9576f5d11a1d5a2d865ce359b0c86d5ae3603719",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDh2YcqLcGltXuP\ncdKhAo1boUBpET0//KVUVEw3YKAkRukNbUQgDddSJy8G7KbPT5XkpNXx/GNBRH0U\njGcVP7afJHGToWpyc7yQkp1ZZnFxBYyQsWknUI91T+HU2ff8TvygpYJuqz4J8Nwh\n64uI0zr91V1dSkAz4t58H74gvbOmZxKLRT2nXvEoP3GGlFiPvlYQJjL8xS/Zoi7L\nVcYKVadJH9HdqWUsuktp0PBCx7Fn7iwx6bWgAKAD8Sc32RVQ4ZmZ6SjnXxP/wEIY\nrwK7dDqMS6H03hRuW2vbwnNQG5X993twUxaL0w6y3NASwBDnyvZR/xcGLr//sW+X\nrb6XZFStAgMBAAECggEAA0+Vzm28ysHaFZyAzrjzmw4GXHPy/qrkvpN8yYwKVPXQ\nKVD6gHDLgQoPg6249U2QoDk1ZLaDOvv2zHQRd8uHERau7o/deF+PelwX3+1jSNmg\nuadMKBYjgEADSsRGQSXkSLOccaRjhLBJ/dpO4ZrdIMb9tyYlQk13XwD1H9RAG7ac\njp2DQcdTDBfNIJVfq21LJoEUJSk5D++50nU8WMkgArQnvlrHdlYGWjMdAND0LaRy\nVjtB9WtgXmiHc+l7OebmARWvK7yK6f1+/O/DMg4hYHzuTqRI4EPs/EDI87g7vl6Y\nrHBAAo5A3O3FAkQBKeO7SiAqgniU3PYG4eKWHvh2QQKBgQD3x3y9TL1eUA3Ke7BW\nXF+fzPn0y/mTMfe+SCNgAtWCaPXqS//sG+iaxceSNuWr/A/70wQY/A6kt0jQubLp\nEhMCRf1VIPxboN/Kwt7ArzMmjzwv6VIGlbNjvG1iKbipKZopXeive4k0nIDeObxC\nXCEjPWCbXsfvkmiI7RdlbSIvbQKBgQDpV8hE2yz6Uaw7OWMs0g5JmekfSL7DLq73\njtbJ8g7jChYzX7HqR6V5bI5GrveKBoOIMBu4CdfKumYo8a0p8eaH4LG84XDedyYE\ngnH2jjL5T6WmQGoke2HR2bbvky9xGUlkLowfkkADvVOibwcF7jbd1/HqQ6e9smS4\nl61UJ18yQQKBgFhk3mdZ/SSsQn896QamJacIpRNjwUF1zgAgFB6oZCsF7tULD93X\nhv/QFwZed0kHv1wDR67yHPc+O8fat6zWOdnRxjKcderqVWwsYPM0jXbwGnStNAoN\nVdX63rrqT2pp4Qlo6x3PYH9YZdDhn/u8ikXcG57SDVm2TXyruHECofNxAoGAWKx0\nPb5wzDuHUQZQ6vJ0XYHwtmPFopS2BvuwIhQrlhn6L9G44cgSWR9ovfG1vi0VhQaL\nMhgDelX1hq+414zGx3Ia+SVO6CutNd+AgWquclHTKGeoLm740G+E9mwfhkJOwpRx\nyXmhfApRoxPAPn+1N/7dPuIw94S4g/GX+7fulEECgYEA2AWbn/NjZ3uXs44ldSuh\n7QF6UldjSzShi+9aCbqMHGtsepArv1q6/Dh/CYx/QKM0yS2TLBeG7CE0Ue9WZrs6\nQL/hcHrlfyAvp7e2WeCWnyq9ctO/8k5veC5OzVv/ye1z3640qXuTJ+LnrRQ4hxcR\nB25qJzQFrfbOBp9C2hg/osI=\n-----END PRIVATE KEY-----\n",
+    "client_email": "project-yura-kozyrenko@formal-theater-411018.iam.gserviceaccount.com",
+    "client_id": "109402069355336763192",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/project-yura-kozyrenko%40formal-theater-411018.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}
