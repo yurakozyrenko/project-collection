@@ -1,8 +1,8 @@
 const { validationResult } = require('express-validator');
 const CollectionsServices = require('../services/collectionsServices.js');
 const constants = require('../constants/const.js');
-const path = require('path');
 const ItemsServices = require('../services/itemsServices.js');
+const uploadImage = require('../helpers/bucket.js');
 
 class CollectionsControllers {
     async getAllCollections(req, res) {
@@ -55,20 +55,13 @@ class CollectionsControllers {
             }
 
             const { name, description, topic } = req.body;
-            const __dirname = path.resolve();
-
-            let fileName;
-            if (req.files) {
-                fileName = Date.now().toString() + req.files.image.name;
-                req.files.image.mv(path.join(__dirname, 'uploads', fileName));
-            }
-            const imageSrc = fileName || null;
+            const userId = req.user.id;
 
             const collection =
                 await CollectionsServices.getCollectionCheckByUser(
                     name,
                     topic,
-                    req.user.id
+                    userId
                 );
 
             if (collection) {
@@ -77,12 +70,18 @@ class CollectionsControllers {
                 });
             }
 
+            let imageUrl;
+            if (req.files) {
+                const file = req.files.image;
+                imageUrl = await uploadImage(file);
+            }
+            const imageSrc = imageUrl || null;
             const newCollection = await CollectionsServices.createCollection(
                 name,
                 description,
                 topic,
                 imageSrc,
-                req.user.id
+                userId
             );
 
             return res.status(201).json({
