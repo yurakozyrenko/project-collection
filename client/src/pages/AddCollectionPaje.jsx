@@ -17,6 +17,7 @@ export const AddCollectionPage = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [topic, setTopic] = useState('');
+    const [image, setImage] = useState(null);
 
     const { status } = useSelector((state) => state.collection);
 
@@ -36,10 +37,15 @@ export const AddCollectionPage = () => {
             data.append('name', name);
             data.append('description', description);
             data.append('topic', topic);
+            data.append('image', image);
             dispatch(createCollection(data));
         } catch (error) {
             console.log(error);
         }
+    };
+
+    const handleImageChange = (e) => {
+        setImage(e.target.files[0]);
     };
 
     const handlerGoBack = () => {
@@ -50,6 +56,7 @@ export const AddCollectionPage = () => {
         setName('');
         setDescription('');
         setTopic('');
+        setImage(null);
     };
 
     return (
@@ -83,7 +90,7 @@ export const AddCollectionPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="formCategory" className="mt-3">
-                    <Form.Label> Topic:</Form.Label>
+                    <Form.Label>Topic:</Form.Label>
                     <Form.Control
                         as="select"
                         value={topic}
@@ -100,6 +107,15 @@ export const AddCollectionPage = () => {
                     </Form.Control>
                 </Form.Group>
 
+                <Form.Group controlId="formImage" className="mt-3">
+                    <Form.Label>Image:</Form.Label>
+                    <Form.Control
+                        type="file"
+                        accept="image/*"
+                        onChange={handleImageChange}
+                    />
+                </Form.Group>
+
                 <div className="d-flex justify-content-evenly">
                     <Button
                         variant="success"
@@ -113,7 +129,7 @@ export const AddCollectionPage = () => {
                         className="mt-3"
                         onClick={clearFormHandler}
                     >
-                        Cansel
+                        Cancel
                     </Button>
                     <Button
                         variant="primary"
