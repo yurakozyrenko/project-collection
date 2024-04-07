@@ -94,6 +94,14 @@ export const CollectionPage = () => {
                         </div>
                     ) : (
                         <Container>
+                            {collections.imageSrc && (
+                                <img
+                                    src={collections.imageSrc}
+                                    width={200}
+                                    height={200}
+                                    alt="Collection"
+                                />
+                            )}
                             <h2>Collection: {collections.name}</h2>
                             <h3>Description: {collections.description}</h3>
                             <Alert variant="info">
